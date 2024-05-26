@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ExtendidoEuclidesComponent } from './components/extendido-euclides/extendido-euclides.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { AritmeticaModularComponent } from './components/aritmetica-modular/aritmetica-modular.component';
+import { InversoAditivoComponent } from './components/inverso-aditivo/inverso-aditivo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExtendidoEuclidesComponent,
-    HomeComponent
+    HomeComponent,
+    AritmeticaModularComponent,
+    InversoAditivoComponent
   ],
   imports: [
     BrowserModule,

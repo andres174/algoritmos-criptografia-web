@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ExtendidoEuclidesComponent } from './components/extendido-euclides/extendido-euclides.component';
 import { HomeComponent } from './components/home/home.component';
+import { AritmeticaModularComponent } from './components/aritmetica-modular/aritmetica-modular.component';
+import { InversoAditivoComponent } from './components/inverso-aditivo/inverso-aditivo.component';
 
 const routes: Routes = [
   {
@@ -12,6 +14,14 @@ const routes: Routes = [
   {
     path: 'extendido-euclides',
     component: ExtendidoEuclidesComponent
+  },
+  {
+    path:'aritmetica-modular',
+    component: AritmeticaModularComponent
+  },
+  {
+    path: 'inverso-aditivo',
+    component: InversoAditivoComponent
   }
 ];
 

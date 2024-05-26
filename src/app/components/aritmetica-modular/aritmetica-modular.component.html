@@ -1,0 +1,32 @@
+
+<div>
+
+    <p>
+        a mod n = b
+    </p>
+
+    <div>
+        <input type="text" [(ngModel)]="a">
+        mod 
+        <input type="text" [(ngModel)]="n">
+        = 
+        {{result}}
+    </div>
+    <div>
+        <button type="button" (click)="calcular()">
+            Calcular
+        </button>
+        <button type="button" (click)="reset()">
+            Reset
+        </button>
+    </div>
+    <div>
+        <p>Reglas</p>
+        <ul>
+            <li>{{r1}}</li>
+            <li>{{r2}}</li>
+            <li>{{r3}}</li>
+        </ul>
+    </div>
+
+</div>
