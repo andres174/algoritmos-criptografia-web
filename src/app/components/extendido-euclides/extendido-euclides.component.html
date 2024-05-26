@@ -1,0 +1,45 @@
+<div>
+
+    <div>
+        A.E.E INVx (<input type="text" [(ngModel)]="a"> <b>,</b> <input type="text" [(ngModel)]="b">) = {{x}} 
+    </div> 
+    <div>
+        <button (click)="initAlgoritmo()">
+            Calcular
+        </button>
+    </div>
+    <div>
+        <button (click)="reset()">
+            Reset
+        </button>
+    </div>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <td>i</td>
+                <td>yi</td>
+                <td>gi</td>
+                <td>ui</td>
+                <td>vi</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of tablero; let index = index">
+                <td>{{index}}</td>
+                <td *ngFor="let j of i">
+                    {{j}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        Si (vi-1 < 0) = {{si}}      
+    </div>
+    <div>
+        {{x}}
+    </div>
+
+
+</div>
