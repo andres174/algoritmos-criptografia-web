@@ -13,6 +13,7 @@ export class ExtendidoEuclidesComponent implements OnInit{
   b: number = 0
   si: number = 0
   x: number = 0
+  result: number = 0
 
   ngOnInit(): void {
     /* this.initAlgoritmo() */
@@ -49,6 +50,10 @@ export class ExtendidoEuclidesComponent implements OnInit{
       this.tablero[i-1][3] = Number(this.tablero[i-1][3]) + Number(this.b)
     }
     this.x = this.tablero[i-1][3]
+
+    this.result = (Number(this.x) * Number(this.a)) % this.b
+
+
   }
 
   reset(){
