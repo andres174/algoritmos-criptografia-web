@@ -11,7 +11,7 @@ export class ExtendidoEuclidesComponent implements OnInit{
 
   a: number = 0
   b: number = 0
-  //si: number = 0
+  si: number = 0
   x: number = 0
 
   ngOnInit(): void {
@@ -45,8 +45,8 @@ export class ExtendidoEuclidesComponent implements OnInit{
       i = i + 1 
     }
     if (this.tablero[i-1][3] < 0) {
+      this.si = this.tablero[i-1][3]
       this.tablero[i-1][3] = Number(this.tablero[i-1][3]) + Number(this.b)
-     // this.si = this.tablero[i-1][3]
     }
     this.x = this.tablero[i-1][3]
   }
@@ -55,7 +55,7 @@ export class ExtendidoEuclidesComponent implements OnInit{
     this.tablero = []
     this.a = 0
     this.b = 0
-   // this.si = 0
+    this.si = 0
     this.x = 0
   }
 
